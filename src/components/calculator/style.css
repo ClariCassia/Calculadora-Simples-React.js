@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'test';
+    src: url(../../styles/fonts/DS-DIGI.TTF);
+}
+
+body {
+    background: #A0D7FF;
+}
+
+.calculator {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 39px;
+    background: linear-gradient(191deg, #17181A -4.95%, #17181aa9 103.74%);
+    height: 450px;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.28);
+    gap: 10px;
+}
+
+.display,
+.complete-operation {
+    width: 85%;
+    text-align: right;
+    overflow: auto;
+    padding: 10px;
+    font-family: 'test';
+    font-size: 2.5rem;
+    border-radius: 5px;
+    background: linear-gradient(270deg, #B0BDA3 0%, #C1C9BB 100%);
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0.28);
+}
+
+.complete-operation {
+    height: 45px;
+    text-align: left;
+    font-size: 1.875rem;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px;
+    font-size: 0.75rem;
+    border-radius: 16px;
+    background: #005DB2;
+}
+
+.set {
+    background-color: rgba(165, 165, 165, 0.33);
+}
